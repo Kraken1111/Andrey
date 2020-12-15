@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="#ff0000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="Добавить задачу"
+            android:textAlignment="center"
+            android:textAppearance="@style/Theme.AppCompat.Dialog.MinWidth"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="370dp"
+            android:layout_height="33dp"
+            android:background="@color/colorLight"
+            android:hint="Наименование?"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTextDesc"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:background="@color/colorLight"
+            android:hint="описание..."
+            android:textSize="12sp" />
+
+
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="200dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/cardview_dark_background"
+            android:text="Сохранить"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background" />
+
+    </LinearLayout>
+
+</RelativeLayout>
